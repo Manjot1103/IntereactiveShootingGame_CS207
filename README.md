@@ -2,7 +2,7 @@
 Final Project for CS-207 
 Manjot Singh -200444623
 Preetinder Singh- 200442004
-Table of content:
+# Table of content:
 Features
 List Of Components
 Build Instructions
@@ -13,22 +13,22 @@ Planned Features
 Errors
 Team members
 Credits
-Features
+# Features
 
-List Of Components
+# List Of Components
 
-Build Instructions
+# Build Instructions
 
-Circuit Diagram
+# Circuit Diagram
 
-Software
+# Software
 
-Usage
+# Usage
 
-Planned Features
+# Planned Features
 
-Errors
+# Errors
 
-Team Members
+# Team Members
 
-Credits
+# Credits
