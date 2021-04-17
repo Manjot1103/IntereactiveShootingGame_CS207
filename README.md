@@ -27,38 +27,64 @@ The features of the projects are:
  ## List Of Components
 The components which we have used in our project are:
 - Arduino Uno:
+
 ![image](https://user-images.githubusercontent.com/79737374/115114410-6ffb4080-9f4c-11eb-9891-d0f3f61f2773.png)
+
 Arduino Uno is a microcontroller board which is an open-source platform used to connect hardware and software together. The programming language which it supports is one of the most common programming languages in the world which is C++. The software used to operate Arduino uno is Arduino IDE.
 
 - BreadBoard:
+
+![image](https://user-images.githubusercontent.com/79737374/115114418-8903f180-9f4c-11eb-9d70-bffed1748545.png)
+
 
 Breadboard is a plastic board which helps to connect electronic devices and also helps to wire them together. There are many sockets in the breadboard which can vary according to its size. Its sockets are connected to each other in an order. For example, In the given picture, in the middle, the sockets are connected to each other horizontally whereas at the both ends of the board (left and right) which represents the 5v and ground, the sockets are connected vertically.
 
 - Multiplexer:
 
+![image](https://user-images.githubusercontent.com/79737374/115114421-8f926900-9f4c-11eb-881b-493a9f532f59.png)
+
+
 Multiplexer is a device used to operate by sending or receiving  more than one signal (analogue and digital) over a common device at different periods of time. Moreover, helps to increase the number of pins in the Arduino as we can use its channels. So, It has 16 channels (pins) and 4 control pins.
 
 - Piezo Element:
+
+![image](https://user-images.githubusercontent.com/79737374/115114427-9620e080-9f4c-11eb-928c-3aa11e665e32.png)
+
 
 Piezo Element is a sensor used to detect the sound, vibration or knocking near itself. Whenever the piezo detects the knock, it generates voltage which the arduino easily interprets and gives the result to the user.
 
 - LCD Module:
 
+![image](https://user-images.githubusercontent.com/79737374/115114434-9c16c180-9f4c-11eb-859d-18455ad72900.png)
+
+
 An LCD module or we can say Liquid Crystal Display module is an electronic display. The display which we have used in the project is a 20x4 LCD module which means it consists of 20 rows and 4 columns in it. It has a special library to use which is already created in the Arduino IDE named as Liquid Crystal library.
 
 - DC Motors:
+
+![image](https://user-images.githubusercontent.com/79737374/115114442-a2a53900-9f4c-11eb-929e-6ed786472c2f.png)
+
 
 DC motor is an electronic device which uses electrical energy (DC) and converts it into mechanical energy (rotation). There are two types of DC motors brushed and brushless motors.
 
 - Servos:
 
+![image](https://user-images.githubusercontent.com/79737374/115114446-a933b080-9f4c-11eb-8fdc-a05d65d6b0d0.png)
+
+
 Servo Motor is a type of actuator that helps to achieve linear and angular positions. It consists of three wires which represents data wire which is used to receive information,voltage wire and ground wire. It also uses a special library which is already built in the Arduino IDE named as servo.
 
 - ESP8266 (WiFi Module):
 
+![image](https://user-images.githubusercontent.com/79737374/115114448-af299180-9f4c-11eb-8242-9d651f25dc7a.png)
+
+
 ESP8266 is an integrated chip used to add wifi to the arduino. With the help of this module, arduino is able to get access to the internet. Now, we are able to send SMS, mail or perform many more internet things in Arduino. 
 
 - Resistors:
+
+![image](https://user-images.githubusercontent.com/79737374/115114453-b51f7280-9f4c-11eb-8b1f-3f6be34699fe.png)
+
 
 Resistors are the electronic devices used to resist the flow of the current in the circuit. Moreover, it prevents the burning of the device caused due to the direct flow of the current.
 
@@ -71,11 +97,15 @@ The build of the project is disturbed into different elements of the project. An
 - ### Build of Blaster for shooting:
 
 Building bluster is one of the main and difficult parts of the project. Blaster helps to throw paper made bullets to targets. And, if that paper bullet hits the right position which has the piezo element attached to it, the target will fall down and the player will get one point to its scoreboard. 
-        
+
+![image](https://user-images.githubusercontent.com/79737374/115114457-bfda0780-9f4c-11eb-9519-40427622d60c.png)
 
 The first thing of the project which started to prepare was its gun and its magazine was the initial step of its build. The magazine of the blaster helps to store paper bullets in it. First of all, we made cut outs for it and used glue guns to attach those cardboard cutouts together. To let the paper bullets bounce out the magazine, we need something like a spring which will make the bullets to come out the magazine. And, cables wires were the best option for us. We used cable wires as spring by folding it continuously to the end to make it work like a spring.
 
 The next thing was to prepare the functioning of the blaster which consists of how it will be able to throw paper bullets. So, we used a wide mouthed straw as a nozzle. DC motors play the most important role in working the blaster. Total 3 DC motors were used in the blaster. Two of them were attached on the side of the straw which will accelerate the coming out  speed of the paper bullet. Another was used behind the straw and above the magazine which helps the bullet to get removed from the magazine and enter the nozzle. After making an extra cut out to cover the motors and nozzle we were able to get our blaster ready for use.
+
+![image](https://user-images.githubusercontent.com/79737374/115114462-c9636f80-9f4c-11eb-8fa5-b1f2a940d65f.png)
+
 
 - ### Connecting Servos:
 
