@@ -27,7 +27,7 @@ The features of the projects are:
  ## List Of Components
 The components which we have used in our project are:
 - Arduino Uno:
-
+![image](https://user-images.githubusercontent.com/79737374/115114410-6ffb4080-9f4c-11eb-9891-d0f3f61f2773.png)
 Arduino Uno is a microcontroller board which is an open-source platform used to connect hardware and software together. The programming language which it supports is one of the most common programming languages in the world which is C++. The software used to operate Arduino uno is Arduino IDE.
 
 - BreadBoard:
