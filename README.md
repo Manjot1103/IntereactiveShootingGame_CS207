@@ -1,4 +1,4 @@
-#### INTERACTIVE SHOOTING GAME
+# INTERACTIVE SHOOTING GAME
 
 
 The interactive shooting game is a homemade game made with the help of the arduino and other electronic devices.
