@@ -82,8 +82,9 @@ void setup() {
   // loop runs twice for the number of players
   for(int i = 0 ; i < 2 ; i++)
   {
-    
+  // function to clear the lcd module
   lcd.clear();
+  // set the lcd cursor to row 0 to column 1
   lcd.setCursor(0,1);
   lcd.print("       Player");
   lcd.print(i+1);
@@ -100,18 +101,20 @@ void setup() {
   delay(1000);
   lcd.clear();
 
+  // to stroe the miiliseconds since the arduino got started
   long timer = millis();
+   // to store the difference of the previous recorded time and the current time for running the timer of the game
   long newTime = millis()-timer;
-    
+    // loop runs while the time difference doesnot meet the timeThreshold
     while(newTime <= timerThreshold*1000 )
     {
+      
       printScore(i);
       printTime(newTime);
       up();
-      updateMux();
+      updateMux();  // function callings
       down(i);
-      printt();
-      newTime = millis()-timer;
+      newTime = millis()-timer;  // getting the new time from the current time
     }
     
   lcd.clear();
@@ -119,9 +122,11 @@ void setup() {
   lcd.print("      GAME END      ");
   delay(2600);
   }
+  // calling the result function
   result();
 
-  for(int  i = 0 ; i < 4 ; i++)
+  // setting all the 4 servos at an angle of 78
+    for(int  i = 0 ; i < 4 ; i++)
   {
     servo[i].write(78);
   }
@@ -132,49 +137,67 @@ void loop() {
 /**/
 }
 
+// 
 void updateMux () {
+  //loop runs 4 time for recording each.
   for (int i = 0; i < 4; i++){
+    //selecting the channel 
     mux.channel(i);
+    //putting the sensor value in to the sensor array 
     sensor[i] = mux.read();
     delay(3);
   }
 }
 
+// function to get the enimies up or standing.
 void up()
 {
+  // variable to store a random number generated ahead in the function
   int ran;
   do
   {
+    // generating a random number from 0 to 3
    ran = random(4);
   }
   while(ran == prevRan);
   
+  // loop runs 4 times to check if any target is standing
   for(int i = 0 ; i < 4 ; i++)
   {
+    //if any servo has an angle of 78 (or is standing) the function is returned
     if(pos[i] != 78)
     {
       return;
     }
    }
+   // saving the random value in prevRan
    prevRan = ran;
+   // changing the angle of the servo in array
    pos[ran] = 3;
+    // chanig the angle of the servo to 3.
    servo[ran].write(3);
   
 }
 
+// function to put down the the servos when the target get hit (knock sensor) 
 void down(int num)
 {
+  // loop runs 4 times for checking each sensor.
   for(int i = 0; i < 4 ; i++)
   {
+    // if the sensor value exceeds the threshold the sevo is moved to angle of 78
     if(sensor[i] >= sensorThreshold)
     {
       pos[i] = 78;
+      //changing servo position to 78 angle
       servo[i].write(78);
+      // incrementing the score of the current player
       player[num] += 1;
     }
   }
 }
 
+// to print the timer on the lcd 
 void printTime(long milli)
 {
    int sec = milli/1000;
@@ -185,6 +208,7 @@ void printTime(long milli)
    lcd.print(" ");
 }
 
+// to print the score of the player on lcd
 void printScore(int num)
 {
   lcd.setCursor(0,0);
@@ -195,6 +219,7 @@ void printScore(int num)
   lcd.print(player[num]);
 }
 
+// function to print the Scoreboard and result of the game.
 void result()
 {
     lcd.clear();
@@ -207,6 +232,7 @@ void result()
     lcd.print("Player2: ");
     lcd.print(player[1]);
     lcd.setCursor(0,3);
+  //checking if player 1 won or player 2 won
     if(player[0] > player[1])
     {
       lcd.print("Player1 WON");  
