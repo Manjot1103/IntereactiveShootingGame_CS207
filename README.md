@@ -150,14 +150,14 @@ Contribution to the project: Documentation and build of Blaster.
 And the final assembly of the project was done together.
 
 ## Credits
--Project theme: https://create.arduino.cc/projecthub/Ismail_San/laser-shooting-game-star-wars-f4acd8
--Creating cardboard gun using DC motors:
+- Project theme: https://create.arduino.cc/projecthub/Ismail_San/laser-shooting-game-star-wars-f4acd8
+- Creating cardboard gun using DC motors:
 https://www.youtube.com/watch?v=L-i-eqjHiUI
--Usage of LCD module:
+- Usage of LCD module:
 https://www.youtube.com/watch?v=wEbGhYjn4QI&t=1722s
--Github repository for multiplexer library:
+- Github repository for multiplexer library:
 https://github.com/stechio/arduino-ad-mux-lib
--Inspiration of using piezo element (knock sensor) rather than using photoresistor in the original project:
+- Inspiration of using piezo element (knock sensor) rather than using photoresistor in the original project:
 https://www.youtube.com/watch?v=X3XXRZMBPO0
 
 
