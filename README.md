@@ -111,11 +111,16 @@ The next thing was to prepare the functioning of the blaster which consists of h
 
 We have servo to make targets in the project. As, servos helps in the movement of the targets. So, first of all, we attached a cut out of the cardboard to the servo`s horn with the help of ice cream sticks. And, for the working of the servo, we have connected its pins with the arduino. We have used a total of 4 servos in the project and there are attached to pin 2,3,4,and 5 respectively. And, we have setted their angular movement from 0 degree to 90 degree where 0 degree represents the standing position of the target and 90 degree represents the fall down of the target.
 
+![image](https://user-images.githubusercontent.com/79737374/115114477-df713000-9f4c-11eb-9876-5369f0ab7029.png)
+
 
 - ### Connecting Multiplexer:
 
+![image](https://user-images.githubusercontent.com/79737374/115114482-e4ce7a80-9f4c-11eb-93ce-49881ee7c186.png)
+
 We have also used multiplexers in our project as it helped us with more pins to use in addition to the arduino pins. Multiplexer consists of 16 channels which we can also refer to as pins, one voltage pin (vcc), enabler, ground, signal pin (used to get input and output from arduino) and 6 selection pins. The sig pin is connected to the A0 of arduino. Enabler is connected to ground. And the 6 selection pins named as S0, S1, S2, and  S3c are attached to pins 8,9,10 and 11 respectively.
-Connecting Piezo Element:
+
+- ###Connecting Piezo Element:
 
 
 So, we have used piezo elements on the cut out of the target. So, when the paper bullet touches the element, the signal is sent to the arduino and then the arduino allows the servo to move which means the target falls down. And after a delay of a few seconds it again stands. We have used a total of 4 piezo elements in our project and each of them is connected to the multiplexer with pins C0, C1, C2,and C3 respectively. And another wire is attached to the ground. Most important thing to use a piezo element is to connect 1 mega ohms resistor to each element with one side connected to the voltage wire of the piezo element and the other to the ground wire. The reason to use this mega resistor is to increase the sensitivity of the element otherwise it will show no reading to the arduino.
