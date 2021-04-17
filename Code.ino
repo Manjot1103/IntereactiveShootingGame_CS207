@@ -79,7 +79,7 @@ void setup() {
   // Game code 
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-  //  
+  // loop runs twice for the number of players
   for(int i = 0 ; i < 2 ; i++)
   {
     
