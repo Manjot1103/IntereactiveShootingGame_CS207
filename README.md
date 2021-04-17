@@ -120,20 +120,25 @@ We have servo to make targets in the project. As, servos helps in the movement o
 
 We have also used multiplexers in our project as it helped us with more pins to use in addition to the arduino pins. Multiplexer consists of 16 channels which we can also refer to as pins, one voltage pin (vcc), enabler, ground, signal pin (used to get input and output from arduino) and 6 selection pins. The sig pin is connected to the A0 of arduino. Enabler is connected to ground. And the 6 selection pins named as S0, S1, S2, and  S3c are attached to pins 8,9,10 and 11 respectively.
 
-- ###Connecting Piezo Element:
+- ### Connecting Piezo Element:
 
+![image](https://user-images.githubusercontent.com/79737374/115114515-0fb8ce80-9f4d-11eb-8de4-38b5995c242b.png)
 
 So, we have used piezo elements on the cut out of the target. So, when the paper bullet touches the element, the signal is sent to the arduino and then the arduino allows the servo to move which means the target falls down. And after a delay of a few seconds it again stands. We have used a total of 4 piezo elements in our project and each of them is connected to the multiplexer with pins C0, C1, C2,and C3 respectively. And another wire is attached to the ground. Most important thing to use a piezo element is to connect 1 mega ohms resistor to each element with one side connected to the voltage wire of the piezo element and the other to the ground wire. The reason to use this mega resistor is to increase the sensitivity of the element otherwise it will show no reading to the arduino.
 
 - ### Connecting LCD Module:
+
 To achieve the task to have a scoreboard, we have used an LCD module in our project. The scoreboard helps the player to know his score and time left. And, even tell the winner of the game at the end of a play. The LCD module is attached to a device named I2C which helps the module to use less pins to get attached with arduino. It consists of 4 pins: 5v, ground pin, SDA and SCL. And, these pins are attached to their respective arduino pins which also have the same names on it.
 
 ## Circuit Diagram
 
 The following diagram contains the circuit including the connection of piezo elements, the multiplexer and servos with arduino:
 
+![image](https://user-images.githubusercontent.com/79737374/115114570-51497980-9f4d-11eb-9822-5328455dcfca.png)
 
 And, the below diagram shows the connection of LCD module with the arduino using the I2C:
+
+![image](https://user-images.githubusercontent.com/79737374/115114579-5a3a4b00-9f4d-11eb-84c3-714781a15fe1.png)
 
 
 ## Software
