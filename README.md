@@ -4,16 +4,16 @@
 The interactive shooting game is a homemade game made with the help of the arduino and other electronic devices.
 
 ## Table of content:
-- # Features
-- # List Of Components
-- # Build Instructions
-- # Circuit Diagram
-- # Software
-- # Usage
-- # Planned Features
-- # Errors
-- # Team members
-- # Credits
+-  Features
+-  List Of Components
+-  Build Instructions
+-  Circuit Diagram
+-  Software
+-  Usage
+-  Planned Features
+-  Errors
+-  Team members
+-  Credits
 
 ## Features
 The features of the projects are:
